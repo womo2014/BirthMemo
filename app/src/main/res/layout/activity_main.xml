@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.womo.exp8.MainActivity">
+
+    <Button
+        style="@style/MyButton"
+        android:id="@+id/add_button"
+        android:text="@string/add_item"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+        <TextView
+            style="@style/TextHeader"
+            android:layout_weight="1"
+            android:text="@string/name"/>
+        <TextView
+            style="@style/TextHeader"
+            android:layout_weight="1"
+            android:text="@string/birthday"/>
+        <TextView
+            style="@style/TextHeader"
+            android:layout_weight="2"
+            android:text="@string/gift"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D7D7D7"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D7D7D7"/>
+
+</LinearLayout>
